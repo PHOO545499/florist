@@ -941,7 +941,7 @@ header .hero_rel{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     grid-auto-rows: 400px;
-    grid-gap: 20px;
+    grid-gap: 30px;
     margin-top: 40px;
 }
 
@@ -977,9 +977,59 @@ header .hero_rel{
     position: relative;
 }
 
+.blog4_bg{
+	background: url('img/blog1.webp');
+	background-position: center;
+	background-size: cover;
+
+    position: relative;
+}
+.blog5_bg{
+	background: url('img/blog2.webp');
+	background-position: center;
+	background-size: cover;
+
+    position: relative;
+}
+.blog6_bg{
+	background: url('img/blog3.webp');
+	background-position: center;
+	background-size: cover;
+
+    position: relative;
+}
+
+.blog7_bg{
+	background: url('img/blog4.webp');
+	background-position: center;
+	background-size: cover;
+
+    position: relative;
+}
+.blog8_bg{
+	background: url('img/blog5.webp');
+	background-position: center;
+	background-size: cover;
+
+    position: relative;
+}
+.blog9_bg{
+	background: url('img/blog6.webp');
+	background-position: center;
+	background-size: cover;
+
+    position: relative;
+}
+
 .blog1_bg::before,
 .blog2_bg::before,
-.blog3_bg::before{
+.blog3_bg::before,
+.blog4_bg::before,
+.blog5_bg::before,
+.blog6_bg::before,
+.blog7_bg::before,
+.blog8_bg::before,
+.blog9_bg::before{
     content: '';
     padding: 3px 5px;
     background: #000;
@@ -1004,9 +1054,39 @@ header .hero_rel{
     content: 'diy & crafts';
 }
 
+.blog4_bg::before{
+    content: 'trend new';
+}
+
+.blog5_bg::before{
+    content: 'tips & idea';
+}
+
+.blog6_bg::before{
+    content: 'diy & crafts';
+}
+
+.blog7_bg::before{
+    content: 'trend new';
+}
+
+.blog8_bg::before{
+    content: 'tips & idea';
+}
+
+.blog9_bg::before{
+    content: 'diy & crafts';
+}
+
 .blog_g:hover .blog1_bg::before,
 .blog_g:hover .blog2_bg::before,
-.blog_g:hover .blog3_bg::before{
+.blog_g:hover .blog3_bg::before,
+.blog_g:hover .blog4_bg::before,
+.blog_g:hover .blog5_bg::before,
+.blog_g:hover .blog6_bg::before,
+.blog_g:hover .blog7_bg::before,
+.blog_g:hover .blog8_bg::before,
+.blog_g:hover .blog9_bg::before{
     background-color: var(--pc);
 }
 
@@ -1122,6 +1202,7 @@ header .hero_rel{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .follow1{
@@ -1333,7 +1414,7 @@ footer h4{
 
 /**************************************************** ABOUT SECTION ***************************************************/
 
-.about_page_header{
+.page_header{
     background: url('img/about.webp');
     background-size: cover;
     background-position: center;
@@ -1346,6 +1427,9 @@ footer h4{
     padding: 100px 0px;
 }
 
+.page_content span{
+    word-spacing: 10px;
+}
 .page_inner{
     text-align: center;
 }
@@ -1353,7 +1437,7 @@ footer h4{
 .page_content h1{
     font-size: 200%;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .page_content a{
     text-decoration: none;
@@ -1507,4 +1591,87 @@ footer h4{
 }
 .about_member_icon i:hover{
     color: var(--dpc);
+}
+
+/********************************** Content SECTION***************************************************/
+
+.contact_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: max(300px);
+    grid-gap: 30px;
+}
+
+.contact_g h4{
+    font-family: var(--ff2);
+    font-size: 200%;
+}
+
+.contact1 p{
+    font-size: 85%;
+    padding: 20px 0px;
+    line-height: 150%;
+}
+
+.contact1 a{
+    text-decoration: none;
+    display: block;
+    font-size: 80%;
+    color: #555;
+    margin: 20px 0px;
+
+    transition: all 0.3s;
+}
+
+.contact1 a i{
+    padding-right: 5px;
+}
+.contact1 a:hover{
+    color: var(--pc);
+}
+
+.contact2 input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    margin: 20px 0px;
+    color: #777;
+}
+
+.contact2 textarea{
+    color: #777;
+    padding-left: 20px;
+    padding-top: 20px;
+    resize: none;
+    width: 100%;
+    outline: none;
+}
+
+.contact2 a{
+    width: 100px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+
+    transition: all 0.3s;
+}
+
+.contact2 a:hover{
+    color: var(--pc);
+    background: #fff;
+    border-color: var(--pc);
+}
+.contact3 iframe{
+    width: 100%;
+    height: 100%;
 }
