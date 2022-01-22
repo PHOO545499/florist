@@ -184,7 +184,7 @@ header .hero_rel{
 }
 .hero_btn{
 	position: absolute;
-	top: 67%;
+	top: 75%;
 	left: 50px;
 }
 
@@ -382,7 +382,7 @@ header .hero_rel{
 }
 .gallery_list ul li b{
 	font-variant: small-caps;
-	font-weight: 200;
+	font-weight: 400;
 	cursor: pointer;
 }
 /*.gallery_wrapper{
@@ -415,6 +415,7 @@ header .hero_rel{
 .gallery6_g{
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 .gallery2{
 	/*background: red;*/
@@ -863,8 +864,9 @@ select{
 	color: #000;
 	font-weight: 300;
 
-	width: 200px;
+	max-width: 200px;
 	height: 40px;
+	padding: 0px 30px;
 	border: 0.7px solid #000;
 	border-radius: 25px;
 
@@ -1197,7 +1199,7 @@ footer h4{
 .footer_m_container{
 	width: 100%;
 	display: flex;
-		border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+	border-top: 0.5px solid rgba(0, 0, 0, 0.2);
 	border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 .footer_mg{
@@ -1263,6 +1265,7 @@ footer h4{
 	text-transform: uppercase;
 	font-size: 70%;
 	font-weight: bold;
+	cursor: pointer;
 }
 .footer_m3{
 	width: 35%;
