@@ -139,6 +139,9 @@ nav .row ul li a{
 	color: #000;
 /*	font-size: 120%;*/
 }
+nav .row ul li a:hover{
+	color: var(--pc);
+}
 /*nav .row ul li a:last-child img{
 	vertical-align: middle;
 }*/
@@ -384,6 +387,9 @@ header .hero_rel{
 	font-variant: small-caps;
 	font-weight: 400;
 	cursor: pointer;
+}
+.gallery_list ul li b:hover{
+	color: var(--pc);
 }
 /*.gallery_wrapper{
 	position: relative;
